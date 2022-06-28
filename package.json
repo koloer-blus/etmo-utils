@@ -1,10 +1,10 @@
 {
     "name": "etmo",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "✔ Etom is a collection of front-end general functional solutions!",
     "scripts": {
         "build": "tsc",
-        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "format": "prettier --write \"src/**/*.ts\"",
         "lint": "tslint -p tsconfig.json",
         "test": "jest --config jestconfig.json",
         "prepare": "npm run build",
