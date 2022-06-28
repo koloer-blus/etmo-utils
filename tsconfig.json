@@ -5,7 +5,7 @@
         "declaration": true,
         "outDir": "./lib",
         "strict": true,
-        "lib": ["ES6", "ESNext"]
+        "lib": ["ES6", "ESNext", "DOM"]
     },
     "include": ["./src"],
     "exclude": ["node_modules", "**/__tests__/*"]
