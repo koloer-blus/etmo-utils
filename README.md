@@ -137,7 +137,7 @@ Used to determine whether the set value has expired:
 
 - `isOutPeriod({key, value, expired})`
 
-###Handler
+### Handler
 
 Generic error handling based on `try...catch...`:
 
