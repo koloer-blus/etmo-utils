@@ -1,0 +1,46 @@
+{
+    "name": "etmo",
+    "version": "1.0.0",
+    "description": "✔ Etom is a collection of front-end general functional solutions!",
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "lint": "tslint -p tsconfig.json",
+        "test": "jest --config jestconfig.json",
+        "prepare": "npm run build",
+        "pre:publishOnly": "npm run test && npm run lint",
+        "pre:version": "npm run lint",
+        "version": "npm run format && git add -A src",
+        "post:version": "git push && git push --tags"
+    },
+    "files": ["lib/**/*"],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/baiziyu-fe/etmo.git"
+    },
+    "keywords": [
+        "request",
+        "axios",
+        "fetch",
+        "localstorage",
+        "sessionstorage",
+        "router",
+        "auth-router",
+        "router-controller",
+        "error-handler"
+    ],
+    "author": "baiziyu-fe",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/baiziyu-fe/etmo/issues"
+    },
+    "homepage": "https://github.com/baiziyu-fe/etmo#readme",
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "tslint": "^6.1.3",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^4.7.4"
+    }
+}
