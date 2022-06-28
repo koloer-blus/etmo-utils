@@ -4,6 +4,14 @@
 
 [中文文档](./README_ZH.md)
 
+## Install
+
+```shell
+npm install etmo
+
+yarn add etmo
+```
+
 ## main module
 
 ### Request
