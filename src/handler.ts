@@ -21,7 +21,7 @@ export class Handler {
     try {
       const res = callback();
       this.successHandler(res);
-    } catch (e) {
+    } catch (e: any) {
       this.errorHandler(e);
     } finally {
       this.finalHandler();
