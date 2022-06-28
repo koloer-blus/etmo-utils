@@ -114,14 +114,14 @@ export const storage =  new Storage('prefix');
 
 1. `localStorage`
 
-- `setLtg({key, value, expired})`
+- `setLtg(key, value[, expired])`
 - `delLtg(key)`
 - `getLtg(key)`
 
 
 2. `sessionStorage`
 
-- `setStg({key, value, expired})`
+- `setStg(key, value[, expired])`
 - `delStg(key)`
 - `getStg(key)`
 
