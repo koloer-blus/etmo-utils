@@ -175,4 +175,3 @@ export class Storage extends BaseStorage {
 }
 
 export const storage = new Storage('');
-
