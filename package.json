@@ -1,6 +1,6 @@
 {
     "name": "etmo",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "✔ Etom is a collection of front-end general functional solutions!",
     "scripts": {
         "build": "tsc",
