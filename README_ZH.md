@@ -162,7 +162,7 @@ export const storage =  new Storage('prefix');
 ```js
 import {Handler} from 'etmo';
 
-const temp = Handler((v) => console.info(v));
+const temp = new Handler((v) => console.info(v));
 
 temp.use(() => {
   ....
