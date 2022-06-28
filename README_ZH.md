@@ -4,6 +4,14 @@
 
 [English Doc](./README.md)
 
+## 安装
+
+```shell
+npm install etmo
+
+yarn add etmo
+```
+
 ## 主要模块
 
 ### Request
