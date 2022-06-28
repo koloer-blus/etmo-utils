@@ -1,9 +1,9 @@
 import { AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 //>>>> request
-type QueryHandler = (url: string, query?: any) => string;
+export type QueryHandler = (url: string, query?: any) => string;
 
-interface RequestProps extends AxiosRequestConfig {
+export interface RequestProps extends AxiosRequestConfig {
   /**请求拦截器 */
   requestCallback?: (request: AxiosInterceptorManager<AxiosRequestConfig<any>>) => void;
   /**响应拦截器 */
@@ -13,23 +13,23 @@ interface RequestProps extends AxiosRequestConfig {
 
 //>>>> storage
 
-interface StorageBaseProps {
+export interface StorageBaseProps {
   isLocal: boolean;
 }
 
 /**设置存储 */
-interface SetProps extends StorageBaseProps {
+export interface SetProps extends StorageBaseProps {
   key: string;
   value: string;
   expired: number;
 }
 
 /**获取存储 */
-interface GetProps extends StorageBaseProps {
+export interface GetProps extends StorageBaseProps {
   key: string;
 }
 
-interface IsOutExpiredProps {
+export interface IsOutExpiredProps {
   value: any;
   writeTime: number;
   expired: number;
@@ -38,11 +38,11 @@ interface IsOutExpiredProps {
 /**
  * 删除存储
  */
-type DelProps = GetProps;
+export type DelProps = GetProps;
 
-type SetFunc = (key: string, value: any, expired: number) => void;
-type DelFunc = (key: string) => string;
+export type SetFunc = (key: string, value: any, expired: number) => void;
+export type DelFunc = (key: string) => string;
 
 // Handler
-type ErrorHandler = (e: Error) => void;
-type FinalHandler = () => void;
+export type ErrorHandler = (e: Error) => void;
+export type FinalHandler = () => void;
