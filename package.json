@@ -1,7 +1,7 @@
 {
     "name": "etmo-utils",
     "version": "1.0.0",
-    "description": "✔ Etom is a collection of front-end general functional solutions!",
+    "description": "✔ Etmo-Utils is a collection of front-end general functional solutions!",
     "scripts": {
         "build": "tsc",
         "format": "prettier --write \"src/**/*.ts\"",
@@ -21,7 +21,7 @@
     "types": "lib/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/baiziyu-fe/etmo.git"
+        "url": "git+https://github.com/baiziyu-fe/etmo-utils.git"
     },
     "keywords": [
         "request",
@@ -37,9 +37,9 @@
     "author": "baiziyu-fe",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/baiziyu-fe/etmo/issues"
+        "url": "https://github.com/baiziyu-fe/etmo-utils/issues"
     },
-    "homepage": "https://github.com/baiziyu-fe/etmo#readme",
+    "homepage": "https://github.com/baiziyu-fe/etmo-utils#readme",
     "devDependencies": {
         "prettier": "^2.7.1",
         "tslint": "^6.1.3",
