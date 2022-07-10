@@ -1,15 +1,15 @@
-# Etom
+# etmo-utils
 
-✔Etom is a collection of front-end universal functional solutions!
+✔`etmo-utils` is a collection of front-end universal functional solutions!
 
 [中文文档](./README_ZH.md)
 
 ## Install
 
 ```shell
-npm install etmo
+npm install etmo-utils
 
-yarn add etmo
+yarn add etmo-utils
 ```
 
 ## main module
@@ -27,7 +27,7 @@ yarn add etmo
 This will execute `const request = new Request({})` by default:
 
 ````js
-import {request} from 'etmo';
+import {request} from 'etmo-utils';
 request.get('http://test/api');
 ````
 
@@ -36,7 +36,7 @@ request.get('http://test/api');
 Here you need to use the `Request` class:
 
 ````js
-import {Request} from 'etmo';
+import {Request} from 'etmo-utils';
 const request = new Request({
   requestCallback: ...,
   responseCallback: ...,
@@ -79,12 +79,12 @@ Currently only `get`, `post`, `put`, `delete` are supported:
 
 #### cancel request
 
-Currently `etmo` supports two methods of canceling requests that `Axios` natively supports:
+Currently `etmo-utils` supports two methods of canceling requests that `Axios` natively supports:
 
 - `controller.abort`
 - `source.cancelToken`
 
-These two ways are simpler in `etmo`:
+These two ways are simpler in `etmo-utils`:
 
 ````js
 const req = new Request({});
@@ -105,7 +105,7 @@ In `Storage`, the content related to `Ltg` represents `localStorage`, and the co
 1. Use `storage` directly
 
 ````js
-import {storage} from 'etmo';
+import {storage} from 'etmo-utils';
 storage.get('test');
 ````
 
@@ -114,7 +114,7 @@ storage.get('test');
 `Storage` supports passing a parameter as a prefix for all storage information `key`:
 
 ````js
-import {Storage} from 'etmo';
+import {Storage} from 'etmo-utils';
 export const storage = new Storage('prefix');
 ````
 
@@ -160,7 +160,7 @@ First, you need to pass in the handler functions in the `success`, `error`, and 
 where `errorHandler` and `finalHandler` are optional parameters.
 
 ````js
-import {Handler} from 'etmo';
+import {Handler} from 'etmo-utils';
 
 const temp = new Handler((v) => console.info(v));
 

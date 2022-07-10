@@ -1,15 +1,15 @@
-# Etom
+# Etmo-Utils
 
-✔Etom是前端通用功能解决方案的集合！
+✔`etmo-utils`是前端通用功能解决方案的集合！
 
 [English Doc](./README.md)
 
 ## 安装
 
 ```shell
-npm install etmo
+npm install etmo-utils
 
-yarn add etmo
+yarn add etmo-utils
 ```
 
 ## 主要模块
@@ -27,7 +27,7 @@ yarn add etmo
 这里默认会执行`const request = new Request({})`：
 
 ```js
-import {request} from 'etmo';
+import {request} from 'etmo-utils';
 request.get('http://test/api');
 ```
 
@@ -36,7 +36,7 @@ request.get('http://test/api');
 这里需要使用`Request`类：
 
 ```js
-import {Request} from 'etmo';
+import {Request} from 'etmo-utils';
 const request = new Request({
   requestCallback: ...,
   responseCallback: ...,
@@ -79,12 +79,12 @@ const requestCallback = (request) => {
 
 #### 取消请求
 
-目前`etmo`支持`Axios`本身支持的两种取消请求的方式：
+目前`etmo-utils`支持`Axios`本身支持的两种取消请求的方式：
 
 - `controller.abort`
 - `source.cancelToken`
 
-这两种方式在`etmo`中较为简单：
+这两种方式在`etmo-utils`中较为简单：
 
 ```js
 const req = new Request({});
@@ -105,7 +105,7 @@ const controller = req.abort();
 1. 直接使用`storage`
 
 ```js
-import {storage} from 'etmo';
+import {storage} from 'etmo-utils';
 storage.get('test'); 
 ```
 
@@ -114,7 +114,7 @@ storage.get('test');
 `Storage`支持传入一个参数作为所有的存储信息`key`的前缀：
 
 ```js
-import {Storage} from 'etmo';
+import {Storage} from 'etmo-utils';
 export const storage =  new Storage('prefix');
 ```
 
@@ -160,7 +160,7 @@ export const storage =  new Storage('prefix');
 其中`errorHandler`和`finalHandler`是可选参数。
 
 ```js
-import {Handler} from 'etmo';
+import {Handler} from 'etmo-utils';
 
 const temp = new Handler((v) => console.info(v));
 

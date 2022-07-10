@@ -1,6 +1,6 @@
 {
-    "name": "etmo",
-    "version": "1.0.6",
+    "name": "etmo-utils",
+    "version": "1.0.0",
     "description": "✔ Etom is a collection of front-end general functional solutions!",
     "scripts": {
         "build": "tsc",
@@ -29,7 +29,10 @@
         "fetch",
         "localstorage",
         "sessionstorage",
-        "error-handler"
+        "error-handler",
+        "utils",
+        "http",
+        "storage"
     ],
     "author": "baiziyu-fe",
     "license": "MIT",
